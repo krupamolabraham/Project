@@ -1,0 +1,30 @@
+<div id="bg">
+  <div class="module">
+    <ul>
+      <li class="tab activeTab"><img src="https://i.imgur.com/Fk1Urva.png" alt="" class ="icon"/></li>
+    </ul>
+    <form class ="form" [formGroup]="login" (ngSubmit)= "onSubmit(login.value)">
+    
+        
+      <input type="text" placeholder="User Name" class="textbox" formControlName = "username" />
+      <input type="text" placeholder="First Name" class="textbox" formControlName = "firstname"  />
+      <input type="text" placeholder="Last Name" class="textbox"  formControlName = "lastname"/>
+      <input type="email" id="email" placeholder="email@domain.com" class="textbox" formControlName = "emailid"/>
+      <input type="tel" id="mobileno" name="mobileno" placeholder="enter your mobile number" class="textbox"  formControlName = "mobileno"/>
+      <input type="tel" id="accno" name="accno" placeholder="enter your acct. number" class="textbox" formControlName = "accno" />
+     
+      <input type="pass" placeholder="Enter Password" class="textbox" formControlName = "pass"/>
+      <input type="pass" placeholder="Repeat Password"  class="textbox"formControlName = "pass"/> <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <button type="submit" class ="btn btn-block login-btn"  routerLinkActive = "active"> sign up</button>
+      
+     <!-- <input  type="Submit" value="Sign Up"> [disabled]="!login.valid"-->
+    
+  </form>
+  </div>
+</div>
+
+<a href="http://dribbble.com/shots/1265587-Registration-Template-PSD?list=everyone" target="_blank"></a>
+

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 26px;
+    color: #212121;
+    padding: 4rem 0 2rem;
+    letter-spacing: -.5px;
+    font-weight: 300;
+}
+
+.heading-bold {
+    font-weight: 700
+}
+
+.loans-wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.loan {
+    max-width: 290px;
+    min-height: 280px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+
+.loan-data {
+    padding: 0px 20px;
+}
+
+.loan:hover .loan-buttons{
+    opacity: 1;
+}
+
+.loan:hover {
+    border-color: #e5e4e9;
+    border-radius: 5px;
+    background: #f6f6f6;
+}
+
+.loan-heading {
+    font-size: 20px;
+    color: #186bca;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.loan-light {
+    color: #212121;
+    font-weight: 400;
+}
+
+.loan-description {
+    color: #212121;
+    font-size: 14px;
+    padding: 20px 0 0;
+}
+
+.loan-explore {
+    font-size: 14px;
+    color: #ca41ec;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.loan-buttons {
+    display: flex;
+    opacity: 0;
+    margin-top: 50px;
+}
+
+.loan-savings {
+    text-align: center;
+    padding: 10px 0;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #91214e;
+    width: 50%;
+    font-size: 14px;
+    color: #91214e;
+    flex: 1;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+}
+
+.loan-apply {
+    flex: 1;
+    padding: 10px 0;
+    width: 50%;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: #571285;
+    color: #fff;
+    border-radius: 0 0 5px 0;
+    border: 1px solid #53149b;
+}
